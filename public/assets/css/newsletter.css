@@ -1,0 +1,89 @@
+/* Kode CSS Untuk PAGE ini dibuat oleh http://jsfiddle.net/2wk6Q/1/ */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #cacccb;
+    font: 10pt "Helvetica" !important;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 10mm;
+    margin: 10mm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-letter table {
+    border-bottom: 1px solid;
+}
+
+
+.header-letter table .row-header-letter{
+    text-align: center;
+}
+
+.header-letter table .row-header-letter .header-letter-title{
+    padding-right: 2px;
+}
+
+.header-letter table .row-header-letter .header-letter-title h2 {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.header-letter table .row-header-letter .header-letter-title h3 {
+    font-size: 15px;
+    margin: 0;
+    padding-top:5px;
+}
+
+.header-letter table .row-header-letter .left-logo{
+    width: 15%;
+}
+
+.header-letter table .row-header-letter .right-logo{
+    width: 12%;
+}
+
+.content-agreement{
+    line-height: 1.5;
+}
+
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
