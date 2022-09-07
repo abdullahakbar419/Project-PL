@@ -220,7 +220,7 @@ Rangkap 3 untuk Sekretariat Tim Percepatan Kebijakan Satu Peta
             </div>
         </div>
     </div>
-    <script type="{{ url('assets/js/print.js') }}"></script>
+    {{-- <script type="{{ url('assets/js/print.js') }}"></script> --}}
     <script src="text/javascript">
         window.print();
     </script>
