@@ -211,7 +211,9 @@ Rangkap 3 untuk Sekretariat Tim Percepatan Kebijakan Satu Peta
                     </div>
                     <div class="col-4">
                         <div class="card-body d-flex justify-content-end">
-                            {!! QrCode::size(100)->generate('https://www.google.com') !!}
+                            {!! QrCode::size(100)->generate(
+                                'https://project-praktik-lapang.herokuapp.com/newsletter/{{ $newsletterById->id }}',
+                            ) !!}
                         </div>
                     </div>
                 </div>
