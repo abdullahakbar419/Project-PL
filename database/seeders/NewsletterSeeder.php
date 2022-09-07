@@ -18,6 +18,6 @@ class NewsletterSeeder extends Seeder
      */
     public function run()
     {
-        Newsletter::factory(1000)->create();
+        Newsletter::factory(20)->create();
     }
 }
