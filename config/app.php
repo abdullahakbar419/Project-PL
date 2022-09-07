@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://project-praktik-lapang.herokuapp.com'),
+    'url' => env('APP_URL', '127.0.0.1'),
 
     'asset_url' => env('ASSET_URL'),
 

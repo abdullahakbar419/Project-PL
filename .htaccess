@@ -1,5 +1,7 @@
 <IfModule mod_rewrite.c>
+    RewriteCond %{SERVER_PORT} ^443$
+    RewriteRule (.*) https://project-praktik-lapang.herokuapp.com/$1
     RewriteEngine on
     RewriteCond %(REQUEST_URL) !^public
-    RewriteRule ^(.*)$ public/$1 [L]
+    <!-- RewriteRule ^(.*)$ public/$1 [L] -->
 </IfModule>
