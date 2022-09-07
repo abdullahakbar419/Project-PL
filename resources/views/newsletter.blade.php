@@ -11,7 +11,7 @@
 
 
 <body>
-    <button id="cetak" class="btn btn-danger">cetak</button>
+    {{-- <button id="cetak" class="btn btn-danger">cetak</button> --}}
     <div class="book">
         <div class="page">
             <div class="header-letter">
@@ -221,7 +221,7 @@ Rangkap 3 untuk Sekretariat Tim Percepatan Kebijakan Satu Peta
         </div>
     </div>
     {{-- <script type="{{ url('assets/js/print.js') }}"></script> --}}
-    <script src="text/javascript">
+    <script type="text/javascript">
         window.print();
     </script>
 </body>
